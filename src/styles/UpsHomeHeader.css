@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Main Nav */
+#mainNav{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    column-gap: 65px;
+    padding: 25px 25px 0px 25px;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+/* Ups Logo */
+#mainNav img{
+    height: 65px;
+}
+.ups-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.ups-logo-container i {
+    display: none;
+    font-size: 40px;
+}
+.nav-items-new-form {
+    background-color: white;
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    display: none;
+    grid-template-rows: 20% 70% 10%;
+    padding: 40px;
+    margin-left: 20%;
+}
+
+.logo-and-cancel-icon{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-items-new-form .cancel-btn {
+    padding: 0;
+    font-size: 50px;
+    border: none;
+    background-color: white;
+    border: none;
+    color: gray;
+}
+
+.nav-items-new-form ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.nav-items-new-form ul > li {
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, .2);
+}
+
+.nav-items-new-form .navItems2-new {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.nav-items-new-form .navItems2-new button {
+    background-color: white;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+}
+
+/*  Whole Nav Items */
+#mainNav #navItems{
+    width: 70%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* First Part Of the nav Items */
+#mainNav #navItems ul{
+    width: 50%;
+    font-size: 15px;
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    cursor: pointer;
+}
+
+.route-links{
+    text-decoration: none;
+    color: black;
+}
+
+#mainNav #navItems ul li{
+    display: flex;
+    align-items: center;
+    height: 7.5em;
+    /* border: 1px solid; */
+}
+#mainNav #navItems ul li span{
+    position: relative;
+    padding-bottom: 5px;
+}
+#mainNav #navItems ul li span::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 50%;
+    bottom: -5px;
+    background-color: gold;
+    transition: all 0.3s ease;
+}
+#mainNav #navItems ul li span:hover::after {
+    width: 30%;
+    left: 35%;
+}
+
+/* Second Part of Nav Items */
+#navItems2 button{
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, .2);
+}
+
+#navItems2 .englishBtn:active{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+#navItems2 button i{
+    margin: 0 7px 0 7px;
+}
+
+/* Search Buton */
+#searchBtn{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 7px;
+}
+
+/* Nav bar items drop down */
+.nav-items-drop-down{
+    top: 138px;
+    width: 100%;
+    padding: 50px 0px 90px 200px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: fixed;
+    background-color: #fff;
+    opacity: 1;
+    animation: slideDown 0.5s ease forwards;
+    z-index: 1001;
+}
+
+@keyframes slideDown {
+    from{
+        transform: translateY(-50px);
+        opacity: 0;
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+ .nav-items-drop-down h4{
+    font-family: "Roboto", Tahoma, helvetica, arial, sans-serif;
+    color: #777;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.nav-items-drop-down ul{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    list-style: none;
+    column-gap: 70px;
+}
+
+.nav-items-drop-down ul li{
+    padding: 10px 10px 10px 0px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.nav-items-drop-down ul li i{
+    color: rgb(0, 128, 171);
+}
+
+.nav-items-drop-down ul li:hover{
+    color: rgb(0, 128, 171);
+}
+
+
+.langModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 1001;
+}
+
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background: rgba(49, 49, 49, 0.8)
+}
+.langForm{
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    width: 50%;
+    bottom: -100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    height: auto;
+    margin: 150px auto;
+    margin-bottom: 100px;
+}
+.langForm .firstDiv{
+    display: flex;
+    padding: 10px 0px 70px 0px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 60px;
+    background-color: rgb(212, 212, 212);
+}
+.langForm .firstDiv h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.langForm .firstDiv button {
+    padding: 0;
+    font-size: 30px;
+    border: none;
+    background-color: rgb(212, 212, 212);
+}
+.langForm .secondDiv{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    padding: 30px 40px;
+    column-gap: 40px;
+}
+.langForm .secondDiv ul{
+    list-style: none;
+}
+.langForm .secondDiv ul li:first-child{
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: gray;
+    letter-spacing: 0.5px;
+}
+.langForm .secondDiv ul li:not(:first-child) {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.langForm .thirdDiv{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    padding: 30px 40px;
+    column-gap: 40px;
+}
+.langForm .thirdDiv ul{
+    list-style: none;
+}
+.langForm .thirdDiv ul li:first-child{
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: gray;
+    letter-spacing: 0.5px;
+}
+.langForm .thirdDiv ul li:not(:first-child) {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.searchModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1001;
+}
+.searchModal .searchNav{
+    position: fixed;
+    background-color: white;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    justify-content: center;
+    column-gap: 15px;
+    padding: 25px;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.input-wrapper{
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    height: 4em;
+}
+.input-wrapper i{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: rgb(0, 128, 171);
+}
+.searchModal .searchNav .input-wrapper input{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 50px;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+}
+/* .searchModal .searchNav input:active{
+    border: 2px solid black;
+} */
+.searchModal .searchNav button{
+    background-color: #fff;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+}
+@media(max-width: 1300px){
+    #mainNav > #navItems > ul , #navItems2 > button{
+        display: none;
+    }
+    #mainNav{
+        display: flex;
+        padding: 10px 20%;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        column-gap: 90%;
+    }
+    #searchBtn{
+        font-size: 40px;
+    }
+    .ups-logo-container i {
+        display: inline-block;
+    }
+    .nav-items-new-form {
+        display: grid;
+    }
+    .langForm {
+        min-width: 80%;
+    }
+}
