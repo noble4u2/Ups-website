@@ -1,12 +1,26 @@
-import { useState } from 'react'
-import HomePage from './components/HomePage'
-
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import React from 'react'
+import UpsHomeHeader from './components/UpsHomeHeader'
+import UpsMain from './components/UpsMain'
+import ContactUs from './components/ContactUs'
+import Newsroom from './components/Newsroom'
+import OurCompany from './components/OurCompany'
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-      <HomePage />
+      <div>
+            <Router>
+                <UpsHomeHeader />
+                <Routes>
+                    <Route path='/' element = {<UpsMain />} />
+                    <Route path='/contactUs' element = {<ContactUs />} />
+                    <Route path='/newsRoom' element = {<Newsroom />} />
+                    <Route path='/ourCompany' element = {<OurCompany />} />
+                </Routes>
+            </Router>
+        </div>
     </>
   )
 }
