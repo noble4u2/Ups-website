@@ -1,0 +1,104 @@
+
+.main-footer-container {
+    background-color: #351C15;
+    padding-bottom: 40px;
+}
+.footer-first-section {
+    display: flex;
+    justify-content: center;
+    padding-block: 30px;
+    column-gap: 20px;
+    border-bottom: 1px solid #C6C6C6;
+}
+
+.footer-second-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 50px;
+}
+.footer-second-section h4 {
+    color: #C6C6C6;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-block: 40px;
+    letter-spacing: 1px;
+}
+.footer-second-section ul {
+    list-style: none;
+}
+.footer-second-section ul li {
+    font-family: "Roboto", Tahoma, helvetica, arial, sans-serif;
+    color: #fff;
+    font-weight: bold;
+    margin-block: 20px;
+}
+
+.second-section-third-list button {
+    background-color: #351C15;
+    border: 1px solid #C6C6C6;
+    color: #C6C6C6;
+    font-size: 22px;
+    margin: 0px 5px;
+    padding: 8px 10px;
+    border-radius: 50%;
+}
+
+.second-section-forth-list{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 40px;
+    width: 20%;
+    border-radius: 10px;
+    row-gap: 20px;
+}
+
+.second-section-forth-list p {
+    color: #fff;
+    line-height: 30px;
+    font-weight: bold;
+}
+.third-section-first-list{
+    display: flex;
+    list-style: none;
+    margin: 0px 110px;
+    color: #C6C6C699;
+    font-family: "Roboto", Tahoma, helvetica, arial, sans-serif;
+    font-size: 13px;
+    margin-block: 20px;
+}
+
+.third-section-first-list li {
+    padding: 0px 10px;
+    font-weight: bold;
+}
+.third-section-first-list :nth-child(-n+4) {
+    border-right: 1px solid;
+}
+.third-section-second-list {
+    margin: 0px 120px;
+    width: 57%;
+    display: block;
+    color: #C6C6C699;
+    line-height: 20px;
+}
+.third-section-second-list a {
+    color: #C6C6C699;
+}
+
+@media(max-width: 850px) {
+    .footer-second-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .second-section-forth-list {
+        width: 300px;
+        margin-block: 40px;
+    }
+    .third-section-first-list {
+        margin-left: 40px;
+    }
+}

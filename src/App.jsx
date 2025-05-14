@@ -5,6 +5,8 @@ import UpsMain from './components/UpsMain'
 import ContactUs from './components/ContactUs'
 import Newsroom from './components/Newsroom'
 import OurCompany from './components/OurCompany'
+import UpsFooter from './components/UpsFooter'
+import './styles/style.css'
 function App() {
 
 
@@ -19,6 +21,7 @@ function App() {
                     <Route path='/newsRoom' element = {<Newsroom />} />
                     <Route path='/ourCompany' element = {<OurCompany />} />
                 </Routes>
+                <UpsFooter />
             </Router>
         </div>
     </>

@@ -1,11 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /* Main Nav */
-#mainNav{
+#mainNav {
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -19,18 +20,21 @@
 }
 
 /* Ups Logo */
-#mainNav img{
+#mainNav img {
     height: 65px;
 }
+
 .ups-logo-container {
     display: flex;
     align-items: center;
     gap: 40px;
 }
+
 .ups-logo-container i {
     display: none;
     font-size: 40px;
 }
+
 .nav-items-new-form {
     background-color: white;
     position: absolute;
@@ -42,12 +46,13 @@
     margin-left: 20%;
 }
 
-.logo-and-cancel-icon{
+.logo-and-cancel-icon {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .nav-items-new-form .cancel-btn {
     padding: 0;
     font-size: 50px;
@@ -66,7 +71,7 @@
 }
 
 
-.nav-items-new-form ul > li {
+.nav-items-new-form ul>li {
     width: 100%;
     border: 1px solid;
     display: flex;
@@ -92,7 +97,7 @@
 }
 
 /*  Whole Nav Items */
-#mainNav #navItems{
+#mainNav #navItems {
     width: 70%;
     /* border: 1px solid black; */
     display: flex;
@@ -101,7 +106,7 @@
 }
 
 /* First Part Of the nav Items */
-#mainNav #navItems ul{
+#mainNav #navItems ul {
     width: 50%;
     font-size: 15px;
     font-weight: bold;
@@ -112,22 +117,24 @@
     cursor: pointer;
 }
 
-.route-links{
+.route-links {
     text-decoration: none;
     color: black;
 }
 
-#mainNav #navItems ul li{
+#mainNav #navItems ul li {
     display: flex;
     align-items: center;
     height: 7.5em;
     /* border: 1px solid; */
 }
-#mainNav #navItems ul li span{
+
+#mainNav #navItems ul li span {
     position: relative;
     padding-bottom: 5px;
 }
-#mainNav #navItems ul li span::after{
+
+#mainNav #navItems ul li span::after {
     content: '';
     position: absolute;
     width: 0;
@@ -137,31 +144,32 @@
     background-color: gold;
     transition: all 0.3s ease;
 }
+
 #mainNav #navItems ul li span:hover::after {
     width: 30%;
     left: 35%;
 }
 
 /* Second Part of Nav Items */
-#navItems2 button{
+#navItems2 button {
     padding: 10px;
     background-color: #fff;
     border: none;
     border-right: 1px solid rgba(0, 0, 0, .2);
 }
 
-#navItems2 .englishBtn:active{
+#navItems2 .englishBtn:active {
     border: 2px solid black;
     border-radius: 5px;
 }
 
 
-#navItems2 button i{
+#navItems2 button i {
     margin: 0 7px 0 7px;
 }
 
 /* Search Buton */
-#searchBtn{
+#searchBtn {
     display: inline-block;
     padding: 10px;
     border-radius: 50%;
@@ -169,7 +177,7 @@
 }
 
 /* Nav bar items drop down */
-.nav-items-drop-down{
+.nav-items-drop-down {
     top: 138px;
     width: 100%;
     padding: 50px 0px 90px 200px;
@@ -184,16 +192,20 @@
 }
 
 @keyframes slideDown {
-    from{
-        transform: translateY(-50px);
+    from {
+        /* transform: translateY(-50px); */
+        padding: 0px 0px 0px 200px;
         opacity: 0;
-    } to {
-        transform: translateY(0);
+    }
+
+    to {
+        /* transform: translateY(0); */
+        padding: 50px 0px 90px 200px;
         opacity: 1;
     }
 }
 
- .nav-items-drop-down h4{
+.nav-items-drop-down h4 {
     font-family: "Roboto", Tahoma, helvetica, arial, sans-serif;
     color: #777;
     margin-bottom: 20px;
@@ -202,7 +214,7 @@
     font-weight: bolder;
 }
 
-.nav-items-drop-down ul{
+.nav-items-drop-down ul {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: repeat(4, 1fr);
@@ -211,18 +223,19 @@
     column-gap: 70px;
 }
 
-.nav-items-drop-down ul li{
+.nav-items-drop-down ul li {
     padding: 10px 10px 10px 0px;
     display: flex;
     width: 100%;
     justify-content: space-between;
     cursor: pointer;
 }
-.nav-items-drop-down ul li i{
+
+.nav-items-drop-down ul li i {
     color: rgb(0, 128, 171);
 }
 
-.nav-items-drop-down ul li:hover{
+.nav-items-drop-down ul li:hover {
     color: rgb(0, 128, 171);
 }
 
@@ -237,7 +250,7 @@
     z-index: 1001;
 }
 
-.overlay{
+.overlay {
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -245,9 +258,10 @@
     right: 0;
     bottom: 0;
     position: fixed;
-    background: rgba(49, 49, 49, 0.8)
+    background: rgba(49, 49, 49, 0.8);
 }
-.langForm{
+
+.langForm {
     background-color: #fff;
     position: absolute;
     top: 50%;
@@ -261,7 +275,8 @@
     margin: 150px auto;
     margin-bottom: 100px;
 }
-.langForm .firstDiv{
+
+.langForm .firstDiv {
     display: flex;
     padding: 10px 0px 70px 0px;
     justify-content: space-between;
@@ -269,61 +284,70 @@
     padding: 50px 60px;
     background-color: rgb(212, 212, 212);
 }
-.langForm .firstDiv h1{
+
+.langForm .firstDiv h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
 }
+
 .langForm .firstDiv button {
     padding: 0;
     font-size: 30px;
     border: none;
     background-color: rgb(212, 212, 212);
 }
-.langForm .secondDiv{
+
+.langForm .secondDiv {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     padding: 30px 40px;
     column-gap: 40px;
 }
-.langForm .secondDiv ul{
+
+.langForm .secondDiv ul {
     list-style: none;
 }
-.langForm .secondDiv ul li:first-child{
+
+.langForm .secondDiv ul li:first-child {
     font-weight: bold;
     margin-bottom: 20px;
     font-size: 13px;
     color: gray;
     letter-spacing: 0.5px;
 }
+
 .langForm .secondDiv ul li:not(:first-child) {
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 16px;
 }
 
-.langForm .thirdDiv{
+.langForm .thirdDiv {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     padding: 30px 40px;
     column-gap: 40px;
 }
-.langForm .thirdDiv ul{
+
+.langForm .thirdDiv ul {
     list-style: none;
 }
-.langForm .thirdDiv ul li:first-child{
+
+.langForm .thirdDiv ul li:first-child {
     font-weight: bold;
     margin-bottom: 20px;
     font-size: 13px;
     color: gray;
     letter-spacing: 0.5px;
 }
+
 .langForm .thirdDiv ul li:not(:first-child) {
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 16px;
 }
 
-.searchModal{
+.searchModal {
     position: fixed;
     top: 0;
     left: 0;
@@ -331,7 +355,8 @@
     height: 100vh;
     z-index: 1001;
 }
-.searchModal .searchNav{
+
+.searchModal .searchNav {
     position: fixed;
     background-color: white;
     border: 1px solid;
@@ -344,13 +369,15 @@
     align-items: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.input-wrapper{
+
+.input-wrapper {
     position: relative;
     display: inline-block;
     width: 70%;
     height: 4em;
 }
-.input-wrapper i{
+
+.input-wrapper i {
     position: absolute;
     left: 20px;
     top: 50%;
@@ -359,7 +386,8 @@
     height: 20px;
     color: rgb(0, 128, 171);
 }
-.searchModal .searchNav .input-wrapper input{
+
+.searchModal .searchNav .input-wrapper input {
     width: 100%;
     border: 2px solid rgba(0, 0, 0, 0.1);
     padding: 10px 50px;
@@ -367,36 +395,78 @@
     border-radius: 10px;
     font-size: 16px;
 }
+
 /* .searchModal .searchNav input:active{
     border: 2px solid black;
 } */
-.searchModal .searchNav button{
+.searchModal .searchNav button {
     background-color: #fff;
     border: none;
     font-size: 40px;
     cursor: pointer;
 }
-@media(max-width: 1300px){
-    #mainNav > #navItems > ul , #navItems2 > button{
+
+@media(max-width: 1300px) {
+
+    #mainNav>#navItems>ul,
+    #navItems2>button {
         display: none;
     }
-    #mainNav{
+
+    #mainNav {
         display: flex;
         padding: 10px 20%;
         align-items: center;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         column-gap: 90%;
     }
-    #searchBtn{
+
+    #searchBtn {
         font-size: 40px;
     }
+
     .ups-logo-container i {
         display: inline-block;
     }
+
     .nav-items-new-form {
         display: grid;
     }
+
     .langForm {
         min-width: 80%;
+    }
+}
+
+@media(max-width: 850px) {
+    #mainNav {
+        padding: 10px 30%;
+    }
+
+    #mainNav img {
+        height: 35px;
+    }
+    .ups-logo-container i {
+        font-size: 35px;
+    }
+    #searchBtn {
+        font-size: 35px;
+    }
+    .nav-items-new-form .logo-and-cancel-icon :is(img, button i) {
+        height: 32px;
+        font-size: 32px;
+    }
+    .logo-and-cancel-icon {
+        padding: 0;
+    }
+    .nav-items-new-form{
+        grid-template-rows: 10% 60% 30%;
+    }
+    .langModal h1 {
+        font-size: 20px;
+    }
+    .langForm {
+        width: 100%;
+        height: fit-content;
     }
 }

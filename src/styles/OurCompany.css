@@ -1,0 +1,134 @@
+.home-link {
+    font-size: 16px;
+    margin-left: 10px;
+    color: #121212;
+    padding-left: 150px;
+}
+
+.home-link a {
+    color: #121212;
+    font-weight: normal;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.span1 {
+    margin-right: 3px;
+}
+
+.ups-fact-container {
+    list-style: none;
+    display: flex;
+    justify-self: center;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    margin-block: 70px;
+}
+
+.ups-fact-container li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    padding: 0px 70px;
+}
+
+.ups-fact-container li:nth-child(-n + 3) {
+    border-right: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+.ups-fact-container li h3 {
+    font-size: 40px;
+}
+
+.ups-fact-container li p {
+    font-size: 16px;
+}
+
+.ups-fact-container li i {
+    color: #767676;
+    font-size: 50px;
+}
+
+.promo-section-container {
+    margin-block: 40px;
+    padding-block: 30px;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.informational-article-section {
+    display: flex;
+    padding: 40px 12%;
+    column-gap: 5%;
+}
+
+.informational-article-section img {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: flex;
+    justify-self: center;
+}
+
+.informational-article-section .article-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 32px;
+    position: relative;
+    margin-left: 50px;
+}
+
+.article-description h4 i {
+    font-weight: 500;
+    line-height: 16px;
+    font-family: "Roboto", Tahoma, helvetica, arial, sans-serif;
+}
+
+.informational-article-section .article-description::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 40%;
+    top: 3em;
+    left: -4%;
+    background-color: gold;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.article-description p {
+    text-transform: uppercase;
+    color: #767676;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@media(max-width: 850px) {
+    .ups-fact-container {
+        flex-direction: column;
+        border-right: none;
+    }
+    .ups-fact-container li {
+        margin-block: 20px;
+        text-align: center;
+    }
+    .ups-fact-container li:nth-child(-n + 3) {
+        border-right: none;
+    }
+    .informational-article-section {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+        border: 1px solid;
+    }
+    .article-description {
+        width: 100%;
+        text-align: center;
+    }
+    .informational-article-section .article-description::before {
+        display: none;
+    }
+}
